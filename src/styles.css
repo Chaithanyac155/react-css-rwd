@@ -7,7 +7,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+:root{
+  --height:52px;
+  }
 *::-webkit-scrollbar {
   display: none;
 }
@@ -20,6 +22,7 @@ html {
   align-items: center;
   background-color: #fdd2e9;
   padding: 1rem;
+  height:var(--height);
 }
 .sticky {
   position: fixed;
@@ -100,6 +103,7 @@ html {
   grid-gap: 1rem;
   text-align: justify;
   padding: 4rem 1rem 2rem;
+  height:calc(100vh-var(--height));
 }
 
 .heading-primary {
